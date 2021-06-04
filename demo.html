@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.ico">
+    <title>Captian America  </title>
+    <link rel="stylesheet" href="./css/egg.css">
+    <link rel="stylesheet" href="./css/formlogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <header class="main">
+        <a href="#"><img class="logo" src="./imgs/Untitled-2.png"></a>
+        <ul class="menu">
+            <li><i class="far fa-moon" onclick="myfunction()"></i></li>
+            <li><a href="#">Studio</a></li>
+            <li><a id="mybtn" href="#myModal">Frofile</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading-maintext">
+                <h1>Chào mừng Bro đến với đội trưởng Mỹ</h1>
+                <p>Cảm ơn bro đã xem cái trang ngớ ngẩn này ! </p>
+                <a href="#" class="btn" onclick="document.getElementById('id01')">Đăng nhập</a>
+                <a href="#" class="btn">Liên lạc</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div id="myNav" class="overlay">
+            <!--nút ấn menu-->
+            <a href="javascrip:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <!-- >&#9776;<i class="fas fa-bars"></i> -->
+            <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Work</a>
+                <a href="#">Login</a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+        <div class="yasuo" style="font-size: 30px; cursor: pointer;" onclick="openNav()"><i class="fas fa-bars"></i></i>
+    </header>
+
+    <div class="body-main-text">
+        <h3 style="text-align: center;">Stuck with U </h3>
+        <p>
+            We love having romantic dinners just because any day is a good day to celebrate being together is there anyone with whom you love (or would love) to have such reasonless romantic dinners? 
+            I may have say it a thousand times, but I’ll never get tired of looking at them mention someone whose eyes you love.
+            Those are the moments when I regret drawing our eyes as a black dot haha, I’d love to do them justice with my drawing, but I guess you gotta trust me and believe they actually are beautiful.
+            You always know .We like holding hands, when walking, sleeping, watching TV, or doing nothing. And usually whenever one of us reach out for it, the other one just knows, no need to look or talk.
+        </p>
+    </div>
+    <div class="body-main-text">
+        <p>
+            In all seriousness... this has been a rough past year for everyone. So excited to *hopefully* get back to normal soon!
+
+            Thank you all for sticking around with us, being able to connect with you guys has helped this experience immensely 🥺<br>
+
+            PSA: it turns out that bread does not provide any nutritional value to birds, so feed responsibly with other things like corn and seeds!
+
+        </p>
+    </div>
+    <div class="container_slideshow">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="./imgs/slideshow/Arquivos Capitão América - Burn Book.jpg" style="width:100%">
+            <div class="text">Captain America_ founder của The Advengers</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="./imgs/slideshow/Arquivos Marvel - Burn Book.jpg" style="width:100%">
+            <div class="text">Bờ mông nước Mỹ</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="./imgs/slideshow/Captain America by Steven Toang.jpg" style="width:100%">
+            <div class="text">Nerver die </div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="./imgs/slideshow/Cả MXH rần rần chế ảnh Captain America Đội trưởng chơi nối từ thế nào mà bị 'đi đường quyền'.jpg"
+                style="width:100%">
+            <div class="text">Chơi nối từ đê</div>
+        </div>
+        <!--next and previous btn-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+    </div>
+    <div class="clearfix"></div>
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+             <p>
+                 Xin chào, mình là Hà Nghiêm Túc. Một đứa ất ơ, vô dụng, và code trang web này các bạn có thể bắt gặp ở bất 
+                 kì trang nào(vì tớ copy & paste cả mà). Có niềm đam mê với môn thể thao E sờ pót
+                 tự tin thách đấu bất cứ ai.Còn chần chờ gì nữa, liên hệ với tớ làm kèo solo Daxua nào !
+             </p>                
+        </div>
+    </div>
+    
+    <div class="modal" id="id01">
+          <form class="modal-content animate" action="./date.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                    class="close" title="close modal">&times;</span>
+                    <img src="./imgs/Cre fb Lê Nhật.jpg" alt="avatar" class="avatar">
+                </div>
+
+                <div class="container-login">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label >
+                        <input type="checkbox" checked name="remember" > remember me
+                    </label>
+                </div>
+                <div class="container-login" style="background-color:white;">
+                    <button type="button" onclick="document.getElementById('id01')".style.display='none'
+                    class="cancelbtn">Cancel</button>
+                    <span class="psw"><a href="#">Forgot password</a></span>
+                </div>
+          </form>
+    </div>
+
+
+
+ </body>
+
+
+</html>
